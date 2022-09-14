@@ -461,50 +461,38 @@
                     </svg>
                 </button>
 
-                <form class="application-form" name="application-form">
-                    <div>
-                        <strong class="application-form-title">Залиште свої дані, ми вам передзвонимо</strong>
-
-                        <label>
-                            <span>Ім'я</span>
-                            <input type="text" name="username">
-                            <svg width="18" height="18">
-                                <use></use>
-                            </svg>
-                        </label>
-
-                        <label>
-                            <span>Телефон</span>
-                            <input type="tel" name="user-number">
-                            <svg width="18" height="18">
-                                <use></use>
-                            </svg>
-                        </label>
-
-                        <label>
-                            <span>Пошта</span>
-                            <input type="email" name="user-mail" >
-                            <svg width="18" height="18">
-                                <use></use>
-                            </svg>
-                        </label>
-
-                        <label>
-                            <span>Коментар</span>
-                            <textarea name="coments" rows="5">
-                            </textarea>
-                        </label>
-                        
+                <form  class="form"name="application-form" autocomplete="on">
+                    <strong class="form-title">Залиште свої дані, ми вам передзвонимо</strong>
+                    <div class="form-group">
+                        <label for="name">Ім'я</label>
+                        <input type="text" id="name">
                     </div>
 
-                    <label>
-                        <input type="checkbox">
-                        <span>Погоджуюся з розсилкою та приймаю<a href="">Умови договору</a></span>
+                    <div class="form-group">
+                        <label for="tel">Телефон</label>
+                        <input type="tel" id="tel">
+                    </div>
 
-                    </label>
+                    <div class="form-group">
+                        <label for="mail">Пошта</label>
+                        <input type="email" id="mail">
+                    </div>
 
+                    <div class="form-group">
+                        <label for="coment">Коментар</label>
+                        <textarea name="coments" id="coment" rows="5" placeholder="Введіть текст"></textarea>
+                    </div>
+
+                    <div class="form-terms">
+                        <label>
+                            <input type="checkbox" value="" name="contract-terms" id="terms">
+                            <span>Погоджуюся з розсилкою та приймаю<a href="">Умови договору</a></span>
+                        </label>
+                    
+                    </div>
                     <button type="submit">Відправити</button>
                 </form>
+               
             </div>
         </div>
     <script src="./js/modal.js"></script>

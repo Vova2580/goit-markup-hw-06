@@ -568,11 +568,33 @@ border: 1px solid rgba(33, 150, 243, 1);
   width: 18px;
   height: 18px;
 }
-
-label{
+.application-form{
   display: block;
 }
 
+.form{
+  outline:1px solid tomato;
+  margin-top: 44px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.form-title{
+  display: block;
+  margin-bottom: 12px;
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+textarea{
+  resize: none;
+}
+
+.form-terms{
+  display: block;
+}
 /* footer */
 .footer{
 background-color:var(--hero-footer-bg-color);
