@@ -449,7 +449,23 @@
                     </ul>
              </div>
 
+            <form class="mailing-form">
+            <strong class="mailing-title">Підпишіться на розсилку</strong>
+
+            <div class="mailing">
+            <label for="mailing-mail"></label>
+            <input type="email" class="mailing-input" placeholder="E-mail" id="mailing-mail">
+            <button class="mailing-btn" type="submit">Підписатися
+                <svg class="mailing-icon">
+                    <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+            </button>
+            </div>
+            
+        </form>
     </div> 
+
+   
 
     </footer>
     
@@ -464,33 +480,45 @@
                 <form  class="form"name="application-form" autocomplete="on">
                     <strong class="form-title">Залиште свої дані, ми вам передзвонимо</strong>
                     <div class="form-group">
-                        <label for="name">Ім'я</label>
-                        <input type="text" id="name">
+                        <label class="form-group-lable" for="name">Ім'я</label>
+                        <input class="form-group-input" type="text" id="name">
+                        <svg width="18" height="18" class="form-group-icon">
+                            <use href="./images/icons.svg#icon-formperson"></use>
+                        </svg>
                     </div>
 
                     <div class="form-group">
-                        <label for="tel">Телефон</label>
-                        <input type="tel" id="tel">
+                        <label class="form-group-lable" for="tel">Телефон</label>
+                        <input class="form-group-input" type="tel" id="tel">
+                        <svg width="18" height="18" class="form-group-icon">
+                            <use href="./images/icons.svg#formphone"></use>
+                        </svg>
                     </div>
 
                     <div class="form-group">
-                        <label for="mail">Пошта</label>
-                        <input type="email" id="mail">
+                        <label class="form-group-lable" for="mail">Пошта</label>
+                        <input class="form-group-input" type="email" id="mail">
+                        <svg width="18" height="18" class="form-group-icon">
+                            <use href="./images/icons.svg#formmail"></use>
+                        </svg>
                     </div>
 
                     <div class="form-group">
-                        <label for="coment">Коментар</label>
-                        <textarea name="coments" id="coment" rows="5" placeholder="Введіть текст"></textarea>
+                        <label class="form-group-lable" for="coment">Коментар</label>
+                        <textarea class="form-group-textarea" name="coments" id="coment" rows="5" placeholder="Введіть текст"></textarea>
                     </div>
 
                     <div class="form-terms">
-                        <label>
-                            <input type="checkbox" value="" name="contract-terms" id="terms">
-                            <span>Погоджуюся з розсилкою та приймаю<a href="">Умови договору</a></span>
+                        <label class="form-terms-label">
+                            <input class="form-terms-input visually-hidden" type="checkbox" value="checkbox" name="contract-terms" id="terms">
+                            <svg class="form-terms-icons" width="16" height="15">
+                                <use class="icon-unchecked" href="./images/icons.svg#unchecked"></use>
+                                <use class="icon-checked" href="./images/icons.svg#checked"></use>
+                            </svg>
+                            <span class="form-terms-info">Погоджуюся з розсилкою та приймаю<a href="" class="form-terms-link">Умови договору</a></span>
                         </label>
-                    
                     </div>
-                    <button type="submit">Відправити</button>
+                    <button type="submit" class="form-btn">Відправити</button>
                 </form>
                
             </div>
