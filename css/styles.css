@@ -531,7 +531,7 @@ border: 1px solid rgba(33, 150, 243, 1);
 
 .modal{
   width: 528px;
-  height: 581px;
+  padding: 40px;
 
   position: absolute;
   left: 50%;
@@ -560,6 +560,7 @@ border: 1px solid rgba(33, 150, 243, 1);
   padding: 0;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
 
   cursor: pointer;
 
@@ -579,11 +580,7 @@ border: 1px solid rgba(33, 150, 243, 1);
   display: block;
 }
 
-.form{
-  margin-top: 44px;
-  margin-left: 40px;
-  margin-right: 40px;
-}
+
 .form-title{
   display: block;
   text-align: center;
@@ -606,6 +603,7 @@ border: 1px solid rgba(33, 150, 243, 1);
 .form-group-lable {
   margin-bottom: 4px;
   color: var(--secondary-text-color);
+  font-size: 12px;
 }
 
 .form-group-input {
@@ -633,7 +631,7 @@ border: 1px solid rgba(33, 150, 243, 1);
   padding-left: 16px;
   padding-top: 12px;
 
-
+  resize: none;
 }
 .form-group-textarea:hover{
   border-color: var(--accent-text-color);
@@ -649,10 +647,7 @@ border: 1px solid rgba(33, 150, 243, 1);
   left: 12px;
 
   transition: fill var(--timing--) var(--cubik--);
-}
 
-textarea{
-  resize: none;
 }
 
 textarea::placeholder-shown { 
@@ -675,6 +670,7 @@ display: inline-block;
 color: var(--secondary-text-color);
 margin-bottom: 30px;
 user-select: none;
+
 }
 
 
@@ -722,6 +718,14 @@ color: var(--accent-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: transparent;
   border-radius: 4px;
+
+  transition: background-color var(--timing--) var(--cubik--),
+  box-shadow var(--timing--) var(--cubik--);
+}
+
+.form-btn:hover,
+.form-btn:focus{
+   background-color:#188CE8;
 }
 /* footer */
 .footer {
@@ -1051,9 +1055,11 @@ background-color: var(--accent-text-color);
 .footer-icon{
   color:var(--light-color);
 }
-
+.mailing{
+  display: flex;
+}
 .mailing-form{
- margin-left: 93px;
+ margin-left: auto;
 }
 
 .mailing-title{
@@ -1077,6 +1083,7 @@ background-color: var(--accent-text-color);
   border-radius: 4px;
   padding-left: 16px;
   outline: none;
+  color: var(--light-color);
 }
 
 .mailing-input::placeholder-shown{
@@ -1086,7 +1093,6 @@ background-color: var(--accent-text-color);
 }
 
 .mailing-btn{
-  position: relative;
   cursor: pointer;
   color: var(--light-color);
   background-color: var(--accent-text-color);
@@ -1098,27 +1104,29 @@ background-color: var(--accent-text-color);
   height: 50px;
 
   margin-left: 12px;
-  padding-right: 28px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  
-  
+  gap: 10px;
   
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: transparent;
   border-radius: 4px;
 
+  transition: background-color var(--timing--) var(--cubik--),
+  box-shadow var(--timing--) var(--cubik--);
+
   
 }
 
+.mailing-btn:hover,
+.mailing-btn:focus{
+  background-color: #188CE8;
+}
+
 .mailing-icon{
-  position: absolute;
-  top: 10px;
-  margin-left: 10px;
   width: 24px;
   height: 24px;
-
-  justify-content: baseline;
 }
  
 
